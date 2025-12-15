@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!-- Left Section  -->
+
+        <div id="back-imgs" class="all-container ">
+            <span class="weather-text">weather.com</span>
+            <div id="weather-condition" class="about-weather ">
+            </div>
+            <div class="dropdown">
+                <input type="text" class="search-bar" id="searchInput" placeholder="Search..." onkeyup="toggleDropdown()   ">
+                <div id="myDropdown" class="dropdown-content"></div>
+              </div>
+                
+            <div class="weat-text">
+                <div id="tempo-cloud" class="bottom-text">
+                    <h1 class="" style="font-size: 52px;"><span id="city-temp">00</span><sup>&degc</sup></h1>
+                    <div id="left-ico-change">
+                    </div>
+                </div>
+                <div>
+                    <span class="weather-location" id="city-name"> Watermelon Park</span>
+                </div>
+          
+                <div class="loc-details">
+                    <p id="current-time">11:44</p>
+                    <p><sub id="lat-det"> &deg</sub><sub id="long-det"> &deg</sub> </p>
+                </div>
+            </div>
+
+            <!-- <=====================================Right Section===================================> -->
+            <div class="right-section-parent">
+
+                <div class=" blur-card">
+                    <span class="card-toptext" style="color: white; display: flex; gap: 3px;">Thunderstroms
+                        expected around <p>00:00</p></span>
+                    <hr width="300px" class="mr-hr">
+                    <div class="" style="display: flex;" id="upcoming-weather">
+
+                    </div>
+                </div>
+                <div id="bottom-card" class="blur-card-bottom">
+                    <span style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">5-Day
+                        Forecast</span>
+                    <hr width="300px" class="mr-hra">
+                    <div id="forecast-cart" style="display: flex; flex-direction: column; gap: 5px;">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    
+        <script src="weather.js"></script>
+    <script src="https://kit.fontawesome.com/6658ae8fad.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
