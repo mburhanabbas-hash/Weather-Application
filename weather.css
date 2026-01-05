@@ -265,3 +265,23 @@ input{
 input:hover{
     cursor: pointer;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.transition-heading {
+    color: #333; /* Initial color of the text */
+    cursor: pointer; /* Changes the cursor to a hand icon on hover */
+    /* Key line: specifies which property to transition, duration, and easing function */
+    transition: color 0.5s ease-in-out;
+}
+
+.transition-heading:hover {
+    color: #007BFF; /* Color the text changes to on hover */
+}
