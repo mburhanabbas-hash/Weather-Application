@@ -230,7 +230,7 @@ html {
 
 .about-weather {
     position: absolute;
-    top: 25%;
+    top: 29%;
     margin-left: 80px;
     font-size: 22px;
     font-weight: 900;
@@ -247,6 +247,7 @@ html {
     margin-left: 80px;
 }
 
+.mydropdown {}
 
 .dropdown {
     position: relative;
@@ -263,13 +264,8 @@ html {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
-.show {
-    position: absolute;
-    display: block;
-}
-
-.search-bar::placeholder {
+.show { position: absolute; display: block; }
+.search-bar::placeholder{
     padding-left: 20px;
     padding-right: 20px;
     /* padding-top: 10px; */
@@ -304,6 +300,10 @@ input:hover {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
+    align-items: last baseline;
+    position: absolute;
+    top: 90%;
+    font-size: 12px;
 }
 
 .transition-heading {
